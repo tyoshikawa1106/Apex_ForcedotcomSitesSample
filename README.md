@@ -2,7 +2,7 @@ Apex_ForcedotcomSitesSample
 ===========================
 
 Force.comサイトのサンプルコードです。  
-サイトテンプレートの使い方の確認に使えると思います。  
+サイトテンプレートの使い方やエラーページの確認に使えると思います。  
 
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20140713/20140713231945.png?1405261263" />  
   
