@@ -1,0 +1,66 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" id="page">
+    <apex:composition template="SitesTemplate">
+        <!-- Title -->
+        <apex:define name="title">
+            <apex:outputText value="つくったもの" />
+        </apex:define>
+    
+        <!-- Body -->
+        <apex:define name="body">
+            <div id="pageBody">
+                <div id="pageBodyMain">
+                    <section>
+                        <div class="pageTitle">
+                            <h1><apex:outputText value="つくったもの" /></h1>
+                        </div>
+                        <article class="articleList">
+                            <apex:outputLink value="{!$Page.SitesPortfolio03}">
+                                <div class="articleListText">
+                                    <h1><apex:outputText value="はじめてのSaasy" /></h1>
+                                    <p>
+                                        <apex:outputText value="Cloudforce2012ではじめてSaasyにあえました。" />
+                                        <br/>
+                                        <apex:outputText value="写真も撮れてよかったです。" />
+                                    </p>
+                                </div>
+                                <div class="articleListImage">
+                                    <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/Saasy.jpg')}" alt="Demo3" width="300" height="163"/>
+                                </div>
+                            </apex:outputLink>
+                        </article>
+                        
+                        <article class="articleList">
+                            <apex:outputLink value="{!$Page.SitesPortfolio02}">
+                                <div class="articleListText">
+                                    <h1><apex:outputText value="Cloudforce2012" /></h1>
+                                    <p><apex:outputText value="Cloudforce2012の会場の様子です。" /></p>
+                                </div>
+                                <div class="articleListImage">
+                                    <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace.jpg')}" alt="Demo2" width="300" height="163"/>
+                                </div>
+                            </apex:outputLink>
+                        </article>
+                        
+                        <article class="articleList">
+                            <apex:outputLink value="{!$Page.SitesPortfolio01}">
+                                <div class="articleListText">
+                                    <h1><apex:outputText value="Developer Zone" /></h1>
+                                    <p>
+                                        <apex:outputText value="Developer Zoneでは開発者向けのお話が聞けました。" />
+                                    </p>
+                                </div>
+                                <div class="articleListImage">
+                                    <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/DevZone.jpg')}" alt="Demo1" width="300" height="163"/>
+                                </div>
+                            </apex:outputLink>
+                        </article>
+                    </section>
+                </div>
+                <div id="pageBodySub">
+                    <c:SitesPortfolioLink />
+                    <c:SitesNewsList />
+                </div>
+            </div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

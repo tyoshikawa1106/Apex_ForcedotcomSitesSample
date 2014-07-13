@@ -1,0 +1,110 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" id="page">
+    <apex:composition template="SitesTemplate">
+        <!-- Title -->
+        <apex:define name="title">
+            <apex:outputText value="Cloudforce2012" />
+        </apex:define>
+    
+        <!-- Body -->
+        <apex:define name="body">
+            <div id="pageBody">
+                <div id="pageBodyMain">
+                    <article class="articleDetail">
+                        <header class="articleDetailHead">
+                            <div class="pageTitle">
+                                <h1><apex:outputText value="Cloudforce2012" /></h1>
+                            </div>
+                            <figure>
+                                <apex:outputLink value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace.jpg')}" styleClass="boxGroup">
+                                    <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace.jpg')}" alt="" width="720" height="390"/>
+                                </apex:outputLink>
+                            </figure>
+                            <div class="articleListText">
+                                    <h1><apex:outputText value="Cloudforce2012" /></h1>
+                                    <p>
+                                        <apex:outputText value="Cloudforce2012の会場の様子です。" />
+                                    </p>
+                                </div>
+                        </header>
+                        
+                        <section class="articleDetailBody">
+                            
+                            <section>
+                                <div class="heading-typeB">
+                                    <h3><apex:outputText value="会場の様子 1" /></h3>
+                                </div>
+                                <figure>
+                                    <apex:outputLink value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace1.jpg')}" styleClass="boxGroup">
+                                        <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace1.jpg')}" alt="" width="720" height="390"/>
+                                    </apex:outputLink>
+                                    <figcaption><apex:outputText value="会場の様子 1" /></figcaption>
+                                </figure>
+                                <p><apex:outputText value="基調講演でマーク・ベニオフのお話が聞けました。" /></p>
+                            </section>
+                            
+                            <section>
+                                <div class="heading-typeB">
+                                    <h3><apex:outputText value="会場の様子 2" /></h3>
+                                </div>
+                                <figure>
+                                    <apex:outputLink value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace2.jpg')}" styleClass="boxGroup">
+                                        <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace2.jpg')}" alt="" width="720" height="390"/>
+                                    </apex:outputLink>
+                                    <figcaption><apex:outputText value="会場の様子 2" /></figcaption>
+                                </figure>
+                                <p><apex:outputText value="基調講演の会場はこんな感じでした。" /></p>
+                            </section>
+                            
+                            <section>
+                                <div class="heading-typeB">
+                                    <h3><apex:outputText value="会場の様子 3" /></h3>
+                                </div>
+                                <figure>
+                                    <apex:outputLink value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace3.jpg')}" styleClass="boxGroup">
+                                        <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace3.jpg')}" alt="" width="720" height="390"/>
+                                    </apex:outputLink>
+                                    <figcaption><apex:outputText value="会場の様子 3" /></figcaption>
+                                </figure>
+                                <p><apex:outputText value="基調講演以外でもいろいろなお話が聞けました。" /></p>
+                            </section>
+                            
+                            <section>
+                                <div class="heading-typeB">
+                                    <h3><apex:outputText value="会場の様子 4" /></h3>
+                                </div>
+                                <figure>
+                                    <apex:outputLink value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace4.jpg')}" styleClass="boxGroup">
+                                        <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace4.jpg')}" alt="" width="720" height="390"/>
+                                    </apex:outputLink>
+                                    <figcaption><apex:outputText value="会場の様子 4" /></figcaption>
+                                </figure>
+                                <p><apex:outputText value="SaasyとChattyがパフォーマンスしてました。" /></p>
+                            </section>
+                            
+                            <section>
+                                <div class="heading-typeB">
+                                    <h3><apex:outputText value="会場の様子 5" /></h3>
+                                </div>
+                                <figure>
+                                    <apex:outputLink value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace5.jpg')}" styleClass="boxGroup">
+                                        <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace5.jpg')}" alt="" width="720" height="390"/>
+                                    </apex:outputLink>
+                                    <figcaption><apex:outputText value="会場の様子 5" /></figcaption>
+                                </figure>
+                                <p><apex:outputText value="太鼓のパフォーマンスみれました。" /></p>
+                            </section>
+                        </section>
+                        
+                        <footer class="articleDetailFoot">
+                            <c:SitesRelatedLink />
+                        </footer>
+                    </article>
+                </div>
+                <div id="pageBodySub">
+                    <c:SitesPortfolioLink />
+                    <c:SitesNewsList />
+                </div>
+            </div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

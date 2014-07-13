@@ -1,0 +1,55 @@
+<apex:page >
+    <html lang="ja">
+        <head>
+            <meta charset="utf-8" />
+            <title>
+                <apex:insert name="title" />
+            </title>
+            <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
+            
+            <apex:stylesheet value="{!$Resource.SitesNormalize}"/>
+            <apex:stylesheet value="{!$Resource.SitesCommonCss}"/>
+            
+            <apex:includeScript value="{!URLFOR($Resource.SitesBxslider, 'jquery.bxslider.js')}" />
+            <apex:stylesheet value="{!URLFOR($Resource.SitesBxslider, 'jquery.bxslider.css')}"/>
+            
+            <apex:includeScript value="{!URLFOR($Resource.SitesColorBox, 'jquery.colorbox-min.js')}"/>
+            <apex:stylesheet value="{!URLFOR($Resource.SitesColorBox, 'example1/colorbox.css')}"/>
+        </head>
+        <body>
+            <div id="vf-page">
+                <c:SitesPageScrollTopButton />
+                <!-- Header -->
+                <apex:insert name="header">
+                    <c:SitesHeader />
+                </apex:insert>
+                    
+                <!-- Body -->
+                <apex:insert name="body"/>
+                    
+                <!-- Footer -->
+                <apex:insert name="footer">
+                    <c:SitesFooter />
+                </apex:insert>
+            </div>
+            <script type="text/javascript">
+                var $j = jQuery.noConflict();
+                $j(document).ready(function(){
+                    // bxSlider
+                    $j('.bxslider').bxSlider({
+                        auto: true,
+                        speed: 1000,
+                        pause: 4000,
+                        mode: 'fade'
+                    });
+                    
+                    // Color Box
+                    $j(".boxGroup").colorbox({
+                        rel:'boxGroup',
+                        width:800
+                    });
+                });
+            </script>
+        </body>
+    </html>
+</apex:page>

@@ -1,0 +1,68 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" id="page">
+    <apex:composition template="SitesTemplate">
+        <!-- Title -->
+        <apex:define name="title">
+            <apex:outputText value="Developer Zone" />
+        </apex:define>
+    
+        <!-- Body -->
+        <apex:define name="body">
+            <div id="pageBody">
+                <div id="pageBodyMain">
+                    <article class="articleDetail">
+                        <header class="articleDetailHead">
+                            <div class="pageTitle">
+                                <h1><apex:outputText value="Developer Zone" /></h1>
+                            </div>
+                            <figure>
+                                <apex:outputLink value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/DevZone.jpg')}" styleClass="boxGroup">
+                                    <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/DevZone.jpg')}" alt="" width="720" height="390"/>
+                                </apex:outputLink>
+                            </figure>
+                            <div class="articleListText">
+                                    <h1><apex:outputText value="Developer Zone" /></h1>
+                                    <p>
+                                        <apex:outputText value="Developer Zoneでは開発者向けのお話が聞けました。" />
+                                    </p>
+                                </div>
+                        </header>
+                        
+                        <section class="articleDetailBody">
+                            <section>
+                                <div class="heading-typeB">
+                                    <h3><apex:outputText value="Developer Zoneの様子 1" /></h3>
+                                </div>
+                                <figure>
+                                    <apex:outputLink value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/DevZone1.jpg')}" styleClass="boxGroup">
+                                        <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/DevZone1.jpg')}" alt="" width="720" height="390"/>
+                                    </apex:outputLink>
+                                    <figcaption><apex:outputText value="Developer Zoneの様子 1" /></figcaption>
+                                </figure>
+                            </section>
+                            
+                            <section>
+                                <div class="heading-typeB">
+                                    <h3><apex:outputText value="Developer Zoneの様子 2" /></h3>
+                                </div>
+                                <figure>
+                                    <apex:outputLink value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/DevZone2.jpg')}" styleClass="boxGroup">
+                                        <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/DevZone2.jpg')}" alt="" width="720" height="390"/>
+                                    </apex:outputLink>
+                                    <figcaption><apex:outputText value="Developer Zoneの様子 2" /></figcaption>
+                                </figure>
+                            </section>
+                        </section>
+                        
+                        <footer class="articleDetailFoot">
+                            <c:SitesRelatedLink />
+                        </footer>
+                    </article>
+                </div>
+                <div id="pageBodySub">
+                    <c:SitesPortfolioLink />
+                    <c:SitesNewsList />
+                </div>
+            </div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

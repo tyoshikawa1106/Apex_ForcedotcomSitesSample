@@ -1,0 +1,37 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" id="page">
+    <apex:composition template="SitesTemplate">
+        <!-- Title -->
+        <apex:define name="title">
+            <apex:outputText value="つくったひと" />
+        </apex:define>
+    
+        <!-- Body -->
+        <apex:define name="body">
+            <div id="pageBody">
+                <div id="pageBodyMain">
+                    <article class="articleDetail">
+                        <div class="pageTitle">
+                            <h1><apex:outputText value="つくったひと" /></h1>
+                        </div>
+                        <div class="imageCenter">
+                            <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/about.jpg')}" alt="" width="120" height="120"/>
+                        </div>
+                        <p><apex:outputText value="Force.com Developer" /></p>
+                        <p><apex:outputText value="HTMLとCSSの勉強中です。" /></p>
+                        <p><apex:outputText value="HTML/CSSデザインの教科書すごくわかりやすかったです。" /></p>
+                        <div class="referenceSite">
+                            <h2><apex:outputText value="参考：HTML/CSSのデザインの教科書" /></h2>
+                            <br/>
+                            <apex:outputLink value="http://htmlcss.cat-speak.net/" target="_blank">
+                                <apex:outputText value="http://htmlcss.cat-speak.net/" />
+                            </apex:outputLink>
+                        </div>
+                    </article>
+                </div>
+                <div id="pageBodySub">
+                    <c:SitesNewsList />
+                </div>
+            </div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

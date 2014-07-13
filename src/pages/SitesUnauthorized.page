@@ -1,0 +1,17 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" id="page">
+    <apex:composition template="{!$Site.Template}">
+        <!-- Title -->
+        <apex:define name="title">
+            <apex:outputText value="承認が必要です (401)" />
+        </apex:define>
+    
+        <!-- Body -->
+        <apex:define name="body">
+            <div id="pageBody">
+                <section class="errorPage">
+                    <p><apex:outputText value="承認が必要です (401)" /></p>
+                </section>
+            </div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

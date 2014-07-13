@@ -1,0 +1,70 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" id="page">
+    <apex:composition template="SitesTemplate">
+        <!-- Title -->
+        <apex:define name="title">
+            <apex:outputText value="はじめてのSaasy" />
+        </apex:define>
+    
+        <!-- Body -->
+        <apex:define name="body">
+            <div id="pageBody">
+                <div id="pageBodyMain">
+                    <article class="articleDetail">
+                        <header class="articleDetailHead">
+                            <div class="pageTitle">
+                                <h1><apex:outputText value="はじめてのSaasy" /></h1>
+                            </div>
+                            <figure>
+                                <apex:outputLink value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/Saasy.jpg')}" styleClass="boxGroup">
+                                    <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/Saasy.jpg')}" alt="" width="720" height="390"/>
+                                </apex:outputLink>
+                            </figure>
+                            <div class="articleListText">
+                                    <h1><apex:outputText value="はじめてのSaasy" /></h1>
+                                    <p>
+                                        <apex:outputText value="Cloudforce2012ではじめてSaasyにあえました。" />
+                                        <br/>
+                                        <apex:outputText value="写真も撮れてよかったです。" />
+                                    </p>
+                                </div>
+                        </header>
+                        
+                        <section class="articleDetailBody">
+                            <section>
+                                <div class="heading-typeB">
+                                    <h3><apex:outputText value="Saasy" /></h3>
+                                </div>
+                                <figure>
+                                    <apex:outputLink value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/Saasy.jpg')}" styleClass="boxGroup">
+                                        <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/Saasy.jpg')}" alt="" width="720" height="390"/>
+                                    </apex:outputLink>
+                                    <figcaption><apex:outputText value="Saasyです。前は赤色、後ろは青色になっています。" /></figcaption>
+                                </figure>
+                            </section>
+                            
+                            <section>
+                                <div class="heading-typeB">
+                                    <h3><apex:outputText value="Chatty" /></h3>
+                                </div>
+                                <figure>
+                                    <apex:outputLink value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/Chatty.jpg')}" styleClass="boxGroup">
+                                        <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/Chatty.jpg')}" alt="" width="720" height="390"/>
+                                    </apex:outputLink>
+                                    <figcaption><apex:outputText value="Chattyです。残念ながら撮影に失敗しました。" /></figcaption>
+                                </figure>
+                            </section>
+                        </section>
+                        
+                        <footer class="articleDetailFoot">
+                            <c:SitesRelatedLink />
+                        </footer>
+                    </article>
+                </div>
+                <div id="pageBodySub">
+                    <c:SitesPortfolioLink />
+                    <c:SitesNewsList />
+                </div>
+            </div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

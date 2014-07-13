@@ -1,0 +1,34 @@
+<apex:component >
+	<header id="pageHead">
+		<div id="siteTitle">
+	   		<h1><apex:outputText value="T-Yoshikawa Apps" /></h1>
+	   	</div>
+	   	<p id="catchcopy">
+	   		<apex:outputText value="HTMLとCSSの勉強のためにつくったForce.comサイトです。「HTMLとCSSのデザインの教科書」のサンプルを元につくってみました。" />
+	   	</p>
+	   	<nav class="globalNavi">
+	   		<ul>
+	   			<li>
+	   				<apex:outputLink value="{!$Page.SitesIndex}">
+	   					<apex:outputText value="ホーム" />
+	   				</apex:outputLink>
+	   			</li>
+	   			<li>
+	   				<apex:outputLink value="{!$Page.SitesAbout}">
+	   					<apex:outputText value="つくったひと" />
+	   				</apex:outputLink>
+	   			</li>
+	   			<li>
+	   				<apex:outputLink value="{!$Page.SitesPortfolio}">
+	   					<apex:outputText value="つくったもの" />
+	   				</apex:outputLink>
+	   			</li>
+	   			<li>
+	   				<apex:outputLink value="{!$Page.SitesContact}">
+	   					<apex:outputText value="おといあわせ" />
+	   				</apex:outputLink>
+	   			</li>
+	   		</ul>
+	   	</nav>
+   	</header>
+</apex:component>

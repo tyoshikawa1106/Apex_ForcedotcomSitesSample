@@ -1,0 +1,21 @@
+<apex:component >
+	<section class="newsList">
+		<div class="title">
+			<h2><apex:outputText value="おしらせ" /></h2>
+		</div>
+	    <ul>
+	    	<li>
+	    		<time datetime="2014-01-01"><apex:outputText value="2014年01月03日" /></time>
+	    		<apex:outputText value="HTML/CSSデザインの教科書を読みながらつくったサンプルページを元にForce.comサイトをつくってみました。" />
+	    	</li>
+	    	<li>
+	    		<time datetime="2013-12-29"><apex:outputText value="2013年12月29日" /></time>
+	    		<apex:outputText value="HTML/CSSデザインの教科書を読みおわりました。" />
+	    	</li>
+	    	<li>
+	    		<time datetime="2013-12-19"><apex:outputText value="2013年12月19日" /></time>
+	    		<apex:outputText value="HTML/CSSデザインの教科書を読みはじめました。" />
+	    	</li>
+	    </ul>
+	</section>
+</apex:component>

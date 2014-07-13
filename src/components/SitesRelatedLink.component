@@ -1,0 +1,35 @@
+<apex:component >
+	<section>
+	    <h2 class="heading-typeC">
+	        <apex:outputText value="関連リンク" />
+	    </h2>
+	</section>
+	<aside class="creditUnit">
+	    <div class="creditUnitText">
+	        <p><apex:outputText value="イベント開催会社" /></p>
+	        <h2 class="heading-typeC"><apex:outputText value="salesforce.com Co.,Ltd." /></h2>
+	        <p><apex:outputText value="東京都千代田区丸の内2－7－2　JPタワー12階" /></p>
+	        <ul>
+	            <li>
+	                <apex:outputLink value="http://www.salesforce.com/jp/" target="_blank">
+	                    <apex:outputText value="公式サイト" />
+	                </apex:outputLink>
+	            </li>
+	            <li>
+	                <apex:outputLink value="https://www.facebook.com/SalesforceJapan?brand_redir=1" target="_blank">
+	                    <apex:outputText value="Facebookページ" />
+	                </apex:outputLink>
+	            </li>
+	            <li>
+	                <apex:outputLink value="https://twitter.com/SalesforceJapan" target="_blank">
+	                    <apex:outputText value="Twiiterページ" />
+	                </apex:outputLink>
+	            </li>
+	        </ul>
+	        <p><apex:outputText value="ソーシャルテクノロジーを企業で活用するためのクラウドアプリケーション 及び プラットフォームの提供している会社です。" /></p>
+	    </div>
+	    <div class="creditUnitMap">
+	        <apex:iframe width="300" height="300" frameborder="0" scrolling="no" src="http://www.salesforce.com" />
+	    </div>
+	</aside>
+</apex:component>

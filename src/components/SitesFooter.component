@@ -1,0 +1,12 @@
+<apex:component >
+	<footer id="pageFoot">
+		<p id="copyright">
+	       	<small>
+	       		<apex:outputText value="Copyright" />
+	       		&copy;
+	       		<apex:outputText value=" " />
+	       		<apex:outputText value="Force.com Developer All Rights Reserved." />
+	       	</small>
+		</p>
+	</footer>
+</apex:component>

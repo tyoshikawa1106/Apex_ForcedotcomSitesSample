@@ -1,0 +1,17 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" id="page">
+    <apex:composition template="SitesTemplate">
+        <!-- Title -->
+        <apex:define name="title">
+            <apex:outputText value="システムエラー" />
+        </apex:define>
+    
+        <!-- Body -->
+        <apex:define name="body">
+            <div id="pageBody">
+                <section class="errorPage">
+                    <p><apex:outputText value="システムエラー" /></p>
+                </section>
+            </div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

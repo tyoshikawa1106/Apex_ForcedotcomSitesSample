@@ -1,0 +1,109 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" id="page">
+    <apex:composition template="SitesTemplate">
+        <!-- Title -->
+        <apex:define name="title">
+            <apex:outputText value="ホーム" />
+        </apex:define>
+    
+        <!-- Body -->
+        <apex:define name="body">
+            <div id="pageBody">
+                <section class="mainVisual">
+                    <ul class="bxslider">
+                        <li>
+                            <div class="mainVisualText">
+                                <h1><apex:outputText value="はじめてのSaasy" /></h1>
+                                <p>
+                                    <apex:outputText value="Cloudforce2012ではじめてSaasyにあえました。" />
+                                    <br/>
+                                    <apex:outputText value="写真も撮れてよかったです。" />
+                                </p>
+                            </div>
+                            <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/Saasy.jpg')}" alt="" width="980" height="500" />
+                        </li>
+                        <li>
+                            <div class="mainVisualText">
+                                <h1><apex:outputText value="Cloudforce2012" /></h1>
+                                <p>
+                                    <apex:outputText value="Cloudforce2012の会場の様子です。" />
+                                </p>
+                            </div>
+                            <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace.jpg')}" alt="" width="980" height="500" />
+                        </li>
+                        <li>
+                            <div class="mainVisualText">
+                                <h1><apex:outputText value="Developer Zone" /></h1>
+                                <p>
+                                    <apex:outputText value="Developer Zoneでは開発者向けのお話が聞けました。" />
+                                </p>
+                            </div>
+                            <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/DevZone.jpg')}" alt="" width="980" height="500" />
+                        </li>
+                    </ul>
+                </section>
+                
+                <section class="portfolioIndex">
+                    <article>
+                        <apex:outputLink value="{!$Page.SitesPortfolio03}">
+                            <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/Saasy.jpg')}" alt="Demo3" width="300" height="163" />
+                        </apex:outputLink>
+                        <div>
+                            <h2><apex:outputText value="はじめてのSaasy" /></h2>
+                        </div>
+                        <p>
+                            <apex:outputText value="Cloudforce2012ではじめてSaasyにあえました。" />
+                            <br/>
+                            <apex:outputText value="写真も撮れてよかったです。" />
+                        </p>
+                    </article>
+                    <article>
+                        <apex:outputLink value="{!$Page.SitesPortfolio02}">
+                            <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/MeetingPlace.jpg')}" alt="Demo2" width="300" height="163" />
+                        </apex:outputLink>
+                        <h2><apex:outputText value="Cloudforce2012" /></h2>
+                        <p><apex:outputText value="Cloudforce2012の会場の様子です。" /></p>
+                    </article>
+                    <article>
+                        <apex:outputLink value="{!$Page.SitesPortfolio01}">
+                            <apex:image value="{!URLFOR($Resource.SitesCommonImage, 'images/photo/DevZone.jpg')}" alt="Demo1" width="300" height="163" />
+                        </apex:outputLink>
+                        <h2><apex:outputText value="Developer Zone" /></h2>
+                        <p><apex:outputText value="Developer Zoneでは開発者向けのお話が聞けました。" /></p>
+                    </article>
+                </section>
+                
+                <section class="news">
+                    <div class="newsTitle">
+                        <h1><apex:outputText value="おしらせ" /></h1>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>
+                                <time datetime="2014-01-01"><apex:outputText value="2014年01月03日" /></time>
+                            </th>
+                            <td>
+                                <apex:outputText value="HTML/CSSデザインの教科書を読みながらつくったサンプルページを元にForce.comサイトをつくってみました。" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <time datetime="2013-12-29"><apex:outputText value="2013年12月29日" /></time>
+                            </th>
+                            <td>
+                                <apex:outputText value="HTML/CSSデザインの教科書を読みおわりました。" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <time datetime="2013-12-19"><apex:outputText value="2013年12月19日" /></time>
+                            </th>
+                            <td>
+                                <apex:outputText value="HTML/CSSデザインの教科書を読みはじめました。" />
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

@@ -1,0 +1,60 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" id="page">
+    <apex:composition template="SitesTemplate">
+        <!-- Title -->
+        <apex:define name="title">
+            <apex:outputText value="おといあわせ" />
+        </apex:define>
+    
+        <!-- Body -->
+        <apex:define name="body">
+            <div id="pageBody">
+                <div id="pageBodyMain">
+                    <article class="articleDetail">
+                        <div class="pageTitle">
+                            <h1><apex:outputText value="おといあわせ" /></h1>
+                        </div>
+                        <p><apex:outputText value="サンプルを元につくったおといあわせページです。" /></p>
+                        <div class="btnLink">
+                            <apex:outputLink value="https://plus.google.com/u/0/+TaikiYoshikawa/posts" target="_blank">
+                                <apex:outputText value="おといあわせフォーム" />
+                            </apex:outputLink>
+                        </div>
+    
+                        <p><apex:outputText value="ブログとかTwitterのリンクです。" /></p>
+    
+                        <section>
+                            <table>
+                                <caption>
+                                    <h2 class="heading-typeB"><apex:outputText value="Taiki Yoshikawa" /></h2>
+                                </caption>
+                                <tr>
+                                    <th>
+                                        <apex:outputText value="ブログ" />
+                                    </th>
+                                    <td>
+                                        <apex:outputLink value="http://tyoshikawa1106.hatenablog.com/" target="_blank">
+                                            <apex:outputText value="http://tyoshikawa1106.hatenablog.com/" />
+                                        </apex:outputLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <apex:outputText value="Twitter" />
+                                    </th>
+                                    <td>
+                                        <apex:outputLink value="https:twitter.com/tyoshikawa1106" target="_blank">
+                                            <apex:outputText value="@tyoshikawa1106" />
+                                        </apex:outputLink>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>
+                    </article>
+                </div>
+                <div id="pageBodySub">
+                    <c:SitesNewsList />
+                </div>
+            </div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

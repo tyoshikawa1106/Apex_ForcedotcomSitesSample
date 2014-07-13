@@ -1,0 +1,24 @@
+<apex:component >
+	<nav class="localNavi">
+		<div class="title">
+			<h2><apex:outputText value="つくったもの" /></h2>
+		</div>
+		<ul>
+			<li>
+				<apex:outputLink value="{!$Page.SitesPortfolio03}">
+					<apex:outputText value="はじめてのSaasy" />
+				</apex:outputLink>
+			</li>
+			<li>
+				<apex:outputLink value="{!$Page.SitesPortfolio02}">
+					<apex:outputText value="Cloudforce2012" />
+				</apex:outputLink>
+			</li>
+	   		<li>
+	   			<apex:outputLink value="{!$Page.SitesPortfolio01}">
+	   				<apex:outputText value="Developer Zone" />
+	   			</apex:outputLink>
+	   		</li>
+   		</ul>
+     	</nav>
+</apex:component>
